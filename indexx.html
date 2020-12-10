@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('/day1/html/image/kokankada.jpg');
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+            
+        }
+        .A {
+        grid-area:header;
+        font-size: 40px;
+        color: rgb(34, 13, 73);
+        }
+
+    .B {
+
+        margin-top: 50px;
+        grid-area:menu;
+        float: left;
+        border: outset 5px rgb(57, 102, 57);
+        border-radius: 0px;
+        margin-left: 30px;
+        
+    }
+    .C {
+        grid-area: main;
+        border: dotted 2px rgba(39, 2, 2, 0.87);
+      
+        color: rgba(91, 4, 102, 0.829);
+        font-size: 20px;
+        margin-top: 80px;
+       
+        
+       
+       }
+       .item3 p{
+
+           padding: 20px;
+           margin: 20px;
+       }
+
+   
+    .container {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+        grid-gap: 20px;
+        /* background-color: indigo; */
+        padding: 10px;
+        margin-top:20px ;
+        margin-right: 380px;
+
+    }
+
+    .container>div {
+
+        text-align: center;
+        padding: 10px 0;
+
+    }
+
+
+        ul{
+         list-style-type: none;
+       }
+
+        #Tabs li{
+            float: left left;
+            margin: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+          
+       }
+       a{
+        text-decoration: none;
+        color: rgb(56, 11, 11);
+       }
+      
+ </style>
+</head>
+<body>
+    <div class="container">
+        <div class="A">
+            <header>
+                <strong>Welcome</strong>
+            </header>
+        </div>
+      
+        <div class="B">
+           <ul  id="Tabs"  >
+            <li><a href="profile.html" target="_blank"><b>Profile</b></a></li>
+            <li><a href="gallery.html" target="_blank"><strong> Gallery</stron></a></li>
+            <li><a href="calculator.html" target="_blank"><strong>Calculator</strong></a></li>
+            <li><a href="contact.html" target="_blank"><strong>Contact</strong></a></li>
+            <li><a href="about.html"  target="_blank"><strong>About</strong></a></li>
+        
+           </ul>
+        </div>
+        
+           
+           <div class="C">
+        <p><b>Hey there . Thank you for visting .Please click on tabs  to explore more.Hey there . Thank you for visting .Please click on tabs  to explore more.Hey there . Thank you for visting .Please click on tabs  to explore more.Hey there . Thank you for visting .Please click on tabs  to explore more.Hey there . Thank you for visting .Please click on tabs  to explore more.Hey there . Thank you for visting .Please click on tabs  to explore more.</b></p>
+           </div>
+</body>
+</html>
